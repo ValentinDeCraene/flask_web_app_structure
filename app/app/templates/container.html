@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        {% include "partials/css.html" %}
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between text-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+          </div>
+      </nav>
+      {% block afternav %}{%endblock%}
+       <div class="container">
+           {% block corps %}{% endblock %}
+       </div>
+    </body>
+
+    <footer class="text-center text-dark fixed-bottom bg-light">
+        <div class="container">Footer</div>
+    </footer>
+</html>
